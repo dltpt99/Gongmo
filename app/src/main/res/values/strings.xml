@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Gongmo</string>
+    <string name="GPS">gps</string>
+    <string name="등산">climb</string>
+    <string name="picnic">나들이</string>
+    <string name="near_restaurant">근처식당</string>
+    <string name="climb">등산</string>
 </resources>
