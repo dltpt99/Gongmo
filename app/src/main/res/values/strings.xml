@@ -5,4 +5,5 @@
     <string name="picnic">나들이</string>
     <string name="near_restaurant">근처식당</string>
     <string name="climb">등산</string>
+    <string name="title_activity_gpsactivity">Map</string>
 </resources>
