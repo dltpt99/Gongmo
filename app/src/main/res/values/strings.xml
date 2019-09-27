@@ -6,4 +6,5 @@
     <string name="near_restaurant">근처식당</string>
     <string name="climb">등산</string>
     <string name="title_activity_gpsactivity">Map</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
