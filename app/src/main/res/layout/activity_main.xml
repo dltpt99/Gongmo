@@ -6,64 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <ViewFlipper
         android:id="@+id/image_slide"
-        android:layout_height="250dp"
-        android:layout_width="match_parent"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
+        android:layout_width="411dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <Button
 
         android:id="@+id/GPSactivity"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
 
+
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="40dp"
         android:background="@mipmap/gps_btn"
         android:onClick="GPSbutton"
-
-
-        app:layout_constraintBottom_toBottomOf="@+id/button5"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintBottom_toTopOf="@+id/Picnicactivity"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:id="@+id/Picnicactivity"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
 
-        android:background="@drawable/picnic_btn"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="80dp"
+        android:background="@mipmap/picnic_btn"
         android:onClick="Picnicbutton"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:id="@+id/Climbactivity"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
 
-        android:layout_marginBottom="44dp"
-        android:background="@drawable/rst_btn"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="40dp"
+        android:background="@mipmap/hiking_btn"
+        android:onClick="Climbbutton"
+        app:layout_constraintBottom_toTopOf="@+id/Restaurantactivity"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/Restaurantactivity"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+
+
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="80dp"
+        android:background="@mipmap/rst_btn"
         android:onClick="Restaurantbutton"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button3" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-
-        android:background="@drawable/hiking_btn"
-        android:onClick="Climbbutton"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/GPSactivity"
-        app:layout_constraintTop_toBottomOf="@+id/image_slide" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
