@@ -1,47 +1,51 @@
 package com.example.gongmo;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MotionEvent;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.ViewFlipper;
 
 public class MainActivity extends AppCompatActivity {
-    ViewFlipper v_fllipper;
-
+    ViewPager viewPager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        int[] images = {
-                R.drawable.mt_bukhan,
-                R.drawable.mt_chunggye,
-                R.drawable.mt_dobong
-        };
-        v_fllipper = findViewById(R.id.image_slide);
 
-        for(int image : images) {
-            fllipperImages(image);
+        viewPager =  findViewById(R.id.viewPager);
+        viewPager.setAdapter(new pagerAdapter(getSupportFragmentManager()));
         }
 
+    private class pagerAdapter extends FragmentStatePagerAdapter
+    {
+        private pagerAdapter(FragmentManager fm)
+        {
+            super(fm);
+        }
+        @Override
+        public Fragment getItem(int position)
+        {
+            switch(position)
+            {
+                case 0:
+                    return new fragment_first();
+                case 1:
+                    return new fragment_second();
+                case 2:
+                    return new fragment_third();
+            }
+            return null;
+        }
+        @Override
+        public int getCount()
+        {
+            return 3;
+        }
     }
-
-    public void fllipperImages(int image) {
-        ImageView imageView = new ImageView(this);
-        imageView.setBackgroundResource(image);
-
-        v_fllipper.addView(imageView);      // 이미지 추가
-        v_fllipper.setFlipInterval(4000);       // 자동 이미지 슬라이드 딜레이시간(1000 당 1초)
-        v_fllipper.setAutoStart(true);          // 자동 시작 유무 설정
-
-        // animation
-        v_fllipper.setInAnimation(this,android.R.anim.slide_in_left);
-        v_fllipper.setOutAnimation(this,android.R.anim.slide_out_right);
-    }
-
-
 
     public void GPSbutton(View v) {
         Intent intent = new Intent(this, GPSactivity.class);
