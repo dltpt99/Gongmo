@@ -6,68 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/GPSactivity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginLeft="88dp"
-        android:layout_marginBottom="292dp"
-        android:onClick="GPSbutton"
-        android:text="@string/GPS"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginLeft="88dp"
-        android:layout_marginBottom="188dp"
-        android:onClick="Picnicbutton"
-        android:text="@string/picnic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="88dp"
-        android:layout_marginRight="88dp"
-        android:layout_marginBottom="188dp"
-        android:onClick="Restaurantbutton"
-        android:text="@string/near_restaurant"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="88dp"
-        android:layout_marginRight="88dp"
-        android:layout_marginBottom="292dp"
-        android:onClick="Climbbutton"
-        android:text="@string/climb"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="380dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ViewFlipper
+        android:id="@+id/image_slide"
+        android:layout_width="411dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+
+        android:id="@+id/GPSactivity"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+
+
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="40dp"
+        android:background="@mipmap/gps_btn"
+        android:onClick="GPSbutton"
+        app:layout_constraintBottom_toTopOf="@+id/Picnicactivity"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Picnicactivity"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="80dp"
+        android:background="@mipmap/picnic_btn"
+        android:onClick="Picnicbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Climbactivity"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="40dp"
+        android:background="@mipmap/hiking_btn"
+        android:onClick="Climbbutton"
+        app:layout_constraintBottom_toTopOf="@+id/Restaurantactivity"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/Restaurantactivity"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+
+
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="80dp"
+        android:background="@mipmap/rst_btn"
+        android:onClick="Restaurantbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
