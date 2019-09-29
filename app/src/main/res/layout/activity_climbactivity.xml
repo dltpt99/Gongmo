@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Climbactivity">
-
+ 
     <ImageButton
         android:id="@+id/clmib_easy_btn"
         android:layout_width="0dp"
@@ -62,5 +62,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/climb_hard" />
+
+    <Button
+        android:id="@+id/ama"
+        android:layout_width="400dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/ama"
+        android:onClick="ama"
+        app:layout_constraintBottom_toTopOf="@+id/pro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noob" />
+
+    <Button
+        android:id="@+id/pro"
+        android:layout_width="400dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/pro"
+        android:onClick="pro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ama" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,8 +5,9 @@
             android:innerRadius="0dp"
             android:shape="ring"
             android:thickness="8dp"
-            android:useLevel="false">
-            <solid android:color="@color/colorAccent"/>
+            android:useLevel="false"
+            >
+            <solid android:color="#009688"/>
         </shape>
     </item>
 </layer-list>

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.gongmo">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -20,12 +28,19 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC0pmHj4gwWN6FnkNoHEMbSVgCVz1EiSns" />
+
         <activity
             android:name=".GPSactivity"
             android:label="@string/title_activity_gpsactivity" />
         <activity android:name=".Restaurantactivity" />
         <activity android:name=".Picnicactivity" />
         <activity android:name=".Climbactivity" />
+        <activity android:name=".Climb_Hard"/>
+        <activity android:name=".Climb_Normal"/>
+        <activity android:name=".Climb_Easy"/>
         <activity
             android:name=".SplashActivity"
             android:screenOrientation="portrait"
@@ -37,14 +52,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyC0pmHj4gwWN6FnkNoHEMbSVgCVz1EiSns" />
     </application>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
