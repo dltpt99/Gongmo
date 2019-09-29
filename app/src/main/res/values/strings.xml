@@ -7,4 +7,15 @@
     <string name="climb">등산</string>
     <string name="title_activity_gpsactivity">Map</string>
     <string name="title_activity_maps">Map</string>
+    <string name="GPSbtn">GPS</string>
+    <string name="Climbbtn">등산</string>
+    <string name="Picnicbtn">피크닉</string>
+    <string name="Restaurantbtn">식당</string>
+    <string name="gpsbutton">GPSbutton</string>
+    <string name="banner_flip_to_left">banner flip to left</string>
+    <string name="banner_flip_to_right">banner flip to right</string>
+    <string name="moutain_1">moutain</string>
+    <string name="mountain_2">mountain</string>
+    <string name="mountain_3">mountain</string>
+    <string name="indicator">indicator</string>
 </resources>

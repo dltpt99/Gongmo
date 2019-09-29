@@ -7,63 +7,147 @@
     tools:context=".MainActivity">
 
 
-    <ViewFlipper
-        android:id="@+id/image_slide"
-        android:layout_width="411dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="40dp"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="400dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036">
 
-    <Button
+    </androidx.viewpager.widget.ViewPager>
 
-        android:id="@+id/GPSactivity"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp" />
 
-
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="40dp"
-        android:background="@mipmap/gps_btn"
+    <ImageButton
+        android:id="@+id/gpsButton"
+        android:layout_width="132dp"
+        android:layout_height="116dp"
+        android:layout_marginBottom="252dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/gpsbutton"
         android:onClick="GPSbutton"
-        app:layout_constraintBottom_toTopOf="@+id/Picnicactivity"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/Picnicactivity"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="80dp"
-        android:background="@mipmap/picnic_btn"
-        android:onClick="Picnicbutton"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/gps_btn" />
 
-    <Button
-        android:id="@+id/Climbactivity"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="40dp"
-        android:background="@mipmap/hiking_btn"
+    <ImageButton
+        android:id="@+id/climbButton"
+        android:layout_width="132dp"
+        android:layout_height="116dp"
+        android:layout_marginBottom="252dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/Climbbtn"
         android:onClick="Climbbutton"
-        app:layout_constraintBottom_toTopOf="@+id/Restaurantactivity"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/Restaurantactivity"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-
-
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="80dp"
-        android:background="@mipmap/rst_btn"
-        android:onClick="Restaurantbutton"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/hiking_btn" />
+
+
+    <ImageButton
+        android:id="@+id/picnicButton"
+        android:layout_width="132dp"
+        android:layout_height="116dp"
+        android:layout_marginBottom="68dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/Picnicbtn"
+        android:onClick="Picnicbutton"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/picnic_btn" />
+
+    <ImageButton
+        android:id="@+id/restaurantButton"
+        android:layout_width="132dp"
+        android:layout_height="116dp"
+        android:layout_marginBottom="56dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/Restaurantbtn"
+        android:onClick="Restaurantbutton"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rst_btn" />
+
+    <TextView
+        android:id="@+id/GPSbtn"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="72dp"
+        android:fontFamily="@font/namsan"
+        android:gravity="center"
+        android:text="@string/GPSbtn"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gpsButton" />
+
+    <TextView
+        android:id="@+id/Climbbtn"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="92dp"
+        android:fontFamily="@font/namsan"
+        android:gravity="center"
+        android:text="@string/Climbbtn"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/climbButton" />
+
+    <TextView
+        android:id="@+id/Picnicbbtn"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="72dp"
+        android:fontFamily="@font/namsan"
+        android:gravity="center"
+        android:text="@string/Picnicbtn"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picnicButton" />
+
+    <TextView
+        android:id="@+id/Restaurantbtn"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="92dp"
+        android:fontFamily="@font/namsan"
+        android:gravity="center"
+        android:text="@string/Restaurantbtn"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantButton" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
