@@ -13,7 +13,6 @@
         android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:contentDescription="@string/mountain_2"
-        android:scaleType="fitXY"
         android:background="@drawable/banner_background"
         app:srcCompat="@drawable/mt_chunggye" />
 </RelativeLayout>

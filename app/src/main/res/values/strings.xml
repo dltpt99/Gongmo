@@ -24,4 +24,18 @@
     <string name="main_activity_view_app_name">main activity view app name</string>
     <string name="main_side_menu_button">main side menu button</string>
     <string name="main_search_button">main search button</string>
+    <string name="picnic_with_who">나들이 누구와 함께?</string>
+    <string name="with_family">가족과 함께~</string>
+    <string name="with_couple">연인과 함께~</string>
+    <string name="with_solo">혼자가 편해~</string>
+    <string name="wiith_pet">반려동물과 함께~</string>
+    <string name="with_pet">with_pet</string>
+    <string name="refresh">새로고침</string>
+    <string name="with_family_desc">멀지 않은 곳에서 가족과의\n소중한 추억을 만들 수 있는 가족 나들이!</string>
+    <string name="with_couple_desc">사랑하는 연인과 도심에서\n벗어난듯한 이색 데이트!</string>
+    <string name="with_solo_desc">요즘은 혼자가 대세!\n혼자 즐기는 등산!</string>
+    <string name="with_pet_desc">애완동물과 함께하면\n더 즐거운 등산!</string>
+    <string name="top_appname">top_appname</string>
+    <string name="top_search">top_search</string>
+    <string name="top_sidemenu">top_sidemenu</string>
 </resources>

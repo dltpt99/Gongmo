@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.gongmo">
-
-    <!--
-         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
-         Google Maps Android API v2, but you must specify either coarse or fine
-         location permissions for the 'MyLocation' functionality.
-    -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
+<supports-screens
+    android:largeScreens="true"
+    android:anyDensity="true"
+    android:normalScreens="true"
+    android:smallScreens="true"/>
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Climbhard"></activity>
+        <activity android:name=".picnic_pet"></activity>
+        <activity android:name=".picnic_solo" />
+        <activity android:name=".picnic_couple" />
+        <activity android:name=".picnic_family" />
+        <activity android:name=".Climbhard" />
         <activity android:name=".Climbnormal" />
         <activity android:name=".Climbeasy" />
         <!--
@@ -29,14 +28,9 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyC0pmHj4gwWN6FnkNoHEMbSVgCVz1EiSns" />
-
         <activity
             android:name=".GPSactivity"
             android:label="@string/title_activity_gpsactivity" />
-
         <activity android:name=".Restaurantactivity" />
         <activity android:name=".Picnicactivity" />
         <activity android:name=".Climbactivity" />
@@ -52,6 +46,13 @@
         </activity>
         <activity android:name=".MainActivity" />
 
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC0pmHj4gwWN6FnkNoHEMbSVgCVz1EiSns" />
     </application>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

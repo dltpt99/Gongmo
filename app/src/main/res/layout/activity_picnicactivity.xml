@@ -6,14 +6,215 @@
     android:layout_height="match_parent"
     tools:context=".Picnicactivity">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="53dp"
-        android:layout_marginLeft="53dp"
-        android:layout_marginTop="133dp"
-        android:text="나들이 화면"
+    <ImageButton
+        android:id="@+id/Family"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/banner_background2"
+        android:contentDescription="@string/with_family"
+        android:onClick="picnic_family"
+        android:scaleType="centerInside"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/picnic_family" />
+
+    <ImageButton
+        android:id="@+id/Couple"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/banner_background2"
+        android:contentDescription="@string/with_couple"
+        android:onClick="picnic_couple"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/picnic_couple" />
+
+    <ImageButton
+        android:id="@+id/Solo"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/banner_background2"
+        android:contentDescription="@string/with_solo"
+        android:onClick="picnic_solo"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/picnic_solo" />
+
+    <ImageButton
+        android:id="@+id/Pet"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/banner_background2"
+        android:contentDescription="@string/with_pet"
+        android:onClick="picnic_pet"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/picnic_pet" />
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/top_search"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/search" />
+
+    <ImageButton
+        android:id="@+id/sidemenu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/top_sidemenu"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/side_menu" />
+
+    <ImageView
+        android:id="@+id/app_name"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/top_appname"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_top_banner" />
+
+    <TextView
+        android:id="@+id/with_family"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/with_family"
+        android:fontFamily="@font/goyang"
+        android:gravity="center_horizontal|top"
+        android:scaleType="fitXY"
+        android:text="@string/with_family"
+        android:textColor="#23B085"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Family" />
+
+    <TextView
+        android:id="@+id/with_family_desc"
+        android:layout_width="184dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/with_family_desc"
+        android:fontFamily="@font/font_goyang"
+        android:gravity="center_horizontal"
+        android:text="@string/with_family_desc"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/with_family" />
+
+    <TextView
+        android:id="@+id/with_couple"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/with_couple"
+        android:fontFamily="@font/font_goyang"
+        android:gravity="center_horizontal|top"
+        android:text="@string/with_couple"
+        android:textColor="#23B085"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Couple"/>
+
+    <TextView
+        android:id="@+id/with_couple_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/with_couple_desc"
+        android:fontFamily="@font/font_goyang"
+        android:gravity="center_horizontal"
+        android:text="@string/with_couple_desc"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/with_couple" />
+
+    <TextView
+        android:id="@+id/with_solo"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/with_solo"
+        android:fontFamily="@font/font_goyang"
+        android:gravity="center_horizontal|top"
+        android:text="@string/with_solo"
+        android:textColor="#23B085"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Solo" />
+
+    <TextView
+        android:id="@+id/with_solo_desc"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/with_solo_desc"
+        android:fontFamily="@font/font_goyang"
+        android:gravity="center_horizontal"
+        android:text="@string/with_solo_desc"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/with_solo"/>
+
+    <TextView
+        android:id="@+id/with_pet"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/with_pet"
+        android:fontFamily="@font/font_goyang"
+        android:gravity="center_horizontal|top"
+        android:text="@string/wiith_pet"
+        android:textColor="#23B085"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pet"/>
+
+    <TextView
+        android:id="@+id/with_pet_desc"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/with_pet_desc"
+        android:fontFamily="@font/font_goyang"
+        android:gravity="center_horizontal"
+        android:text="@string/with_pet_desc"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/with_pet"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,47 +7,53 @@
     tools:context=".MainActivity">
 
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="400dp"
-        android:background="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </androidx.viewpager.widget.ViewPager>
-
-
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tab_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="350dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:tabBackground="@drawable/tab_selector"
-        app:tabGravity="center"
-        app:tabIndicatorHeight="0dp" />
-
-    <ImageButton
-        android:id="@+id/gpsButton"
-        android:layout_width="132dp"
-        android:layout_height="116dp"
-        android:layout_marginBottom="252dp"
-        android:background="#00FFFFFF"
-        android:contentDescription="@string/gpsbutton"
-        android:onClick="GPSbutton"
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/top_appname"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/gps_btn" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/main_top_banner" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/top_search"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/search" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/top_sidemenu"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.002"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/side_menu" />
 
     <ImageButton
         android:id="@+id/climbButton"
@@ -60,23 +66,8 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/Climbbtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.827"
-        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@mipmap/hiking_btn" />
 
-    <TextView
-        android:id="@+id/Climbbtn"
-        android:layout_width="110dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="50dp"
-        android:fontFamily="@font/goyang"
-        android:gravity="center"
-        android:text="@string/Climbbtn"
-        android:textColor="#4CAF50"
-        android:textSize="13pt"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/restaurantButton"
-        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageButton
         android:id="@+id/gpsButton"
@@ -103,6 +94,33 @@
         app:layout_constraintBottom_toTopOf="@+id/Restaurantbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@mipmap/rst_btn" />
+
+    <ImageButton
+        android:id="@+id/picnicButton"
+        android:layout_width="132dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="40dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/Picnicbtn"
+        android:onClick="Picnicbutton"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/Picnicbbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/picnic_btn" />
+
+    <TextView
+        android:id="@+id/Climbbtn"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/goyang"
+        android:gravity="center"
+        android:text="@string/Climbbtn"
+        android:textColor="#4CAF50"
+        android:textSize="13pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/restaurantButton"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/Picnicbbtn"
@@ -146,74 +164,32 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <ImageButton
-        android:id="@+id/picnicButton"
-        android:layout_width="132dp"
-        android:layout_height="116dp"
-        android:layout_marginStart="40dp"
-        android:background="#00FFFFFF"
-        android:contentDescription="@string/Picnicbtn"
-        android:onClick="Picnicbutton"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/Picnicbbtn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/picnic_btn" />
-        app:layout_constraintHorizontal_bias="0.827"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/rst_btn" />
-
-    <ImageView
-        android:id="@+id/banner_app_name"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="140dp"
-        android:layout_marginBottom="850dp"
-        android:contentDescription="@string/main_activity_view_app_name"
-        android:scaleType="fitCenter"
-        android:visibility="visible"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="400dp"
+        android:background="#00000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/main_top_banner" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <ImageButton
-        android:id="@+id/side_menu_btn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="850dp"
-        android:background="#00FFFFFF"
-        android:contentDescription="@string/main_side_menu_button"
-        android:scaleType="fitCenter"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/banner_app_name"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/side_menu" />
+    </androidx.viewpager.widget.ViewPager>
 
-    <ImageButton
-        android:id="@+id/main_search_btn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="850dp"
-        android:background="#00FFFFFF"
-        android:contentDescription="@string/main_search_button"
-        android:scaleType="fitCenter"
-        android:visibility="visible"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="350dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/banner_app_name"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/search" />
+        app:tabBackground="@drawable/tab_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

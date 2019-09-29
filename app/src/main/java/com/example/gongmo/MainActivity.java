@@ -19,12 +19,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         viewPager = findViewById(R.id.viewPager);
-
-        viewPager.setAdapter(new pagerAdapter(getSupportFragmentManager()));
-        viewPager.setCurrentItem(0);
+        pagerAdapter adapter = new pagerAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(adapter);
 
         TabLayout tabLayout = findViewById(R.id.tab_layout);
         tabLayout.setupWithViewPager(viewPager, true);
+
 
     }
 
@@ -48,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Restaurantactivity.class);
         startActivity(intent);
     }
+
+
 }
 
 
