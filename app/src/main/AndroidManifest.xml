@@ -17,9 +17,9 @@
         <activity android:name=".picnic_solo" />
         <activity android:name=".picnic_couple" />
         <activity android:name=".picnic_family" />
-        <activity android:name=".Climbhard" />
-        <activity android:name=".Climbnormal" />
-        <activity android:name=".Climbeasy" />
+        <activity android:name=".Climb_Easy" />
+        <activity android:name=".Climb_Normal" />
+        <activity android:name=".Climb_Easy" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
