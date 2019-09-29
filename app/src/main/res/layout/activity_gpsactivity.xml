@@ -20,7 +20,7 @@
         android:layout_height="72dp"
         android:background= "@android:color/transparent"
         android:scaleType="fitCenter"
-        android:layout_gravity="right"
+        android:layout_gravity="left"
         app:srcCompat="@drawable/sos"
         android:onClick="SOS"
         />
