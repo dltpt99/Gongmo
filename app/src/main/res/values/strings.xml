@@ -18,4 +18,5 @@
     <string name="mountain_2">mountain</string>
     <string name="mountain_3">mountain</string>
     <string name="indicator">indicator</string>
+    <string name="button">Button</string>
 </resources>

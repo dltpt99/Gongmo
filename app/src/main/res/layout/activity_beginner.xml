@@ -7,21 +7,132 @@
     tools:context=".beginner">
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
 
-        </LinearLayout>
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="8">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="205dp"
+                    android:layout_height="160dp"
+                    android:text="@string/button" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="205dp"
+                    android:layout_height="160dp"
+                    android:text="@string/button" />
+
+                <Button
+                    android:id="@+id/button19"
+                    android:layout_width="205dp"
+                    android:layout_height="160dp"
+                    android:text="@string/button" />
+
+                <Button
+                    android:id="@+id/button20"
+                    android:layout_width="205dp"
+                    android:layout_height="160dp"
+                    android:text="@string/button" />
+
+                <Button
+                    android:id="@+id/button21"
+                    android:layout_width="205dp"
+                    android:layout_height="160dp"
+                    android:text="@string/button" />
+
+                <Button
+                    android:id="@+id/button22"
+                    android:layout_width="205dp"
+                    android:layout_height="160dp"
+                    android:text="@string/button" />
+
+                <Button
+                    android:id="@+id/button23"
+                    android:layout_width="205dp"
+                    android:layout_height="160dp"
+                    android:text="@string/button" />
+
+                <Button
+                    android:id="@+id/button24"
+                    android:layout_width="205dp"
+                    android:layout_height="160dp"
+                    android:text="@string/button" />
+
+                <Button
+                    android:id="@+id/button25"
+                    android:layout_width="205dp"
+                    android:layout_height="160dp"
+                    android:text="@string/button" />
+
+                <Button
+                    android:id="@+id/button26"
+                    android:layout_width="205dp"
+                    android:layout_height="160dp"
+                    android:text="@string/button" />
+
+                <Button
+                    android:id="@+id/button27"
+                    android:layout_width="205dp"
+                    android:layout_height="160dp"
+                    android:text="@string/button" />
+
+                <Button
+                    android:id="@+id/button28"
+                    android:layout_width="205dp"
+                    android:layout_height="160dp"
+                    android:text="@string/button" />
+
+                <Button
+                    android:id="@+id/button29"
+                    android:layout_width="205dp"
+                    android:layout_height="160dp"
+                    android:text="@string/button" />
+
+                <Button
+                    android:id="@+id/button30"
+                    android:layout_width="205dp"
+                    android:layout_height="160dp"
+                    android:text="@string/button" />
+
+                <Button
+                    android:id="@+id/button31"
+                    android:layout_width="205dp"
+                    android:layout_height="160dp"
+                    android:text="@string/button" />
+
+                <Button
+                    android:id="@+id/button32"
+                    android:layout_width="205dp"
+                    android:layout_height="160dp"
+                    android:text="@string/button" />
+
+                <Button
+                    android:id="@+id/button33"
+                    android:layout_width="205dp"
+                    android:layout_height="160dp"
+                    android:text="@string/button" />
+
+
+            </GridLayout>
+
     </ScrollView>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
