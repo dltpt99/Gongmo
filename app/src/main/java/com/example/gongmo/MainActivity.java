@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.view.View;
 
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         viewPager.setAdapter(new pagerAdapter(getSupportFragmentManager()));
         viewPager.setCurrentItem(0);
+
 
         TabLayout tabLayout = findViewById(R.id.tab_layout);
         tabLayout.setupWithViewPager(viewPager, true);
