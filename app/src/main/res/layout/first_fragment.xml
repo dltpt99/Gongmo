@@ -12,5 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/moutain_1"
+        android:scaleType="fitXY"
+        android:background="@drawable/banner_background"
         app:srcCompat="@drawable/mt_bukhan" />
 </RelativeLayout>
