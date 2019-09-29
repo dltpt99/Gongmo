@@ -36,6 +36,9 @@
         <activity android:name=".Restaurantactivity" />
         <activity android:name=".Picnicactivity" />
         <activity android:name=".Climbactivity" />
+        <activity android:name=".pro"/>
+        <activity android:name=".ama"/>
+        <activity android:name=".beginner"/>
         <activity
             android:name=".SplashActivity"
             android:screenOrientation="portrait"
