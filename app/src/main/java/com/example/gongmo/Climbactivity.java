@@ -29,4 +29,16 @@ public class Climbactivity extends AppCompatActivity {
         Intent intent = new Intent(this, Climbhard.class);
         startActivity(intent);
     }
+    public void beginner(View v){
+        Intent intent = new Intent(this, beginner.class);
+        startActivity(intent);
+    }
+    public void ama(View v){
+        Intent intent = new Intent(this, ama.class);
+        startActivity(intent);
+    }
+    public void pro(View v){
+        Intent intent = new Intent(this, pro.class);
+        startActivity(intent);
+    }
 }
