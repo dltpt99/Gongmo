@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Climbactivity">
 
+
     <ImageButton
         android:id="@+id/clmib_easy_btn"
         android:layout_width="0dp"
