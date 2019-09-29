@@ -19,7 +19,7 @@
         <activity android:name=".picnic_family" />
         <activity android:name=".Climb_Easy" />
         <activity android:name=".Climb_Normal" />
-        <activity android:name=".Climb_Easy" />
+        <activity android:name=".Climb_Hard" />
         <activity android:name=".cprt"></activity>
         <activity android:name=".dev_rv" />
         <!--
