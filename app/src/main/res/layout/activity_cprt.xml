@@ -6,4 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".cprt">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이콘 저작권\n\n\nIcon made by Smashicons from https://smashicons.com-피크닉 아이콘\n
+Icon made by surang from www.flaticon.com -gps아이콘\n
+Icon made by SmashIcons from https://smashicons.com -등산 아이콘\n
+Icon made by xnimrodx from www.flaticon.com - 식당아이콘\n
+Icon made by smalllikeart from www.flaticon.com - 중급자 아이콘\n
+Icon made by Freepik from www.flaticon.com - 초급자아이콘\n
+Icon made by Good Ware from www.flaticon.com - 고급자아이콘\n
+Icon made by Freepik from www.flaticon.com - SOS아이콘\n
+Icon made by Freepik from www.flaticon.com - 가족 아이콘\n
+Icon made by Freepik from www.flaticon.com - 연인 아이콘\n
+Icon made by Freepik from www.flaticon.com - 혼산 아이콘\n
+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
 </androidx.constraintlayout.widget.ConstraintLayout>
