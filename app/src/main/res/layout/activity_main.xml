@@ -41,7 +41,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/Climbbtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/hiking_btn" />
+        app:srcCompat="@mipmap/hiking_btn" />
 
     <TextView
         android:id="@+id/Climbbtn"
@@ -67,7 +67,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/GPSbtn"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/gps_btn" />
+        app:srcCompat="@mipmap/gps_btn" />
 
     <ImageButton
         android:id="@+id/restaurantButton"
@@ -80,7 +80,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/Restaurantbtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/rst_btn" />
+        app:srcCompat="@mipmap/rst_btn" />
 
     <TextView
         android:id="@+id/Picnicbbtn"
@@ -132,7 +132,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/Picnicbbtn"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/picnic_btn" />
+        app:srcCompat="@mipmap/picnic_btn" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
