@@ -12,9 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
-
         android:contentDescription="@string/mountain_3"
         android:background="@drawable/banner_background2"
-        android:scaleType="fitXY"
         app:srcCompat="@drawable/mt_dobong" />
 </RelativeLayout>
