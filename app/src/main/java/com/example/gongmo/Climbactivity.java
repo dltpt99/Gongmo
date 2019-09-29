@@ -15,29 +15,17 @@ public class Climbactivity extends AppCompatActivity {
 
     }
 
-    public void climb_easy(View v){
-        Intent intent = new Intent(this, Climbeasy.class);
-        startActivity(intent);
-    }
-
-    public void climb_normal(View v){
-        Intent intent = new Intent(this, Climbnormal.class);
-        startActivity(intent);
-    }
-
-    public void climb_hard(View v){
-        Intent intent = new Intent(this, Climbhard.class);
-        startActivity(intent);
-    }
-    public void beginner(View v){
+    public void climb_easy(View v) {
         Intent intent = new Intent(this, Climb_Easy.class);
         startActivity(intent);
     }
-    public void ama(View v){
+
+    public void climb_normal(View v) {
         Intent intent = new Intent(this, Climb_Normal.class);
         startActivity(intent);
     }
-    public void pro(View v){
+
+    public void climb_hard(View v) {
         Intent intent = new Intent(this, Climb_Hard.class);
         startActivity(intent);
     }
