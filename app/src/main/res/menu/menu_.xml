@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item
+            android:id="@+id/option"
+            android:icon="@drawable/side_menu"
+            android:title="Item"
+            app:showAsAction="always">
+            <menu>
+
+                <item
+                    android:id="@+id/dev_rv"
+                    android:title="개발자 후기" />
+
+                <item
+                    android:id="@+id/cprt"
+                    android:title="Copyright" />
+            </menu>
+        </item>
+    </menu>
+

@@ -17,6 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".cprt"></activity>
+        <activity android:name=".dev_rv" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -35,9 +37,9 @@
         <activity android:name=".Restaurantactivity" />
         <activity android:name=".Picnicactivity" />
         <activity android:name=".Climbactivity" />
-        <activity android:name=".Climb_Hard"/>
-        <activity android:name=".Climb_Normal"/>
-        <activity android:name=".Climb_Easy"/>
+        <activity android:name=".Climb_Hard" />
+        <activity android:name=".Climb_Normal" />
+        <activity android:name=".Climb_Easy" />
         <activity
             android:name=".SplashActivity"
             android:screenOrientation="portrait"
@@ -49,6 +51,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyC0pmHj4gwWN6FnkNoHEMbSVgCVz1EiSns" />
