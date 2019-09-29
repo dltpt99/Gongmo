@@ -9,10 +9,14 @@
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
-        android:layout_width="412dp"
-        android:layout_height="256dp"
-        android:layout_marginTop="70dp"
-        android:background="#00000000"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="400dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -31,6 +35,21 @@
         app:tabIndicatorHeight="0dp" />
 
     <ImageButton
+        android:id="@+id/gpsButton"
+        android:layout_width="132dp"
+        android:layout_height="116dp"
+        android:layout_marginBottom="252dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/gpsbutton"
+        android:onClick="GPSbutton"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/gps_btn" />
+
+    <ImageButton
         android:id="@+id/climbButton"
         android:layout_width="132dp"
         android:layout_height="116dp"
@@ -41,6 +60,8 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/Climbbtn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@mipmap/hiking_btn" />
 
     <TextView
@@ -137,6 +158,62 @@
         app:layout_constraintBottom_toTopOf="@+id/Picnicbbtn"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@mipmap/picnic_btn" />
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/rst_btn" />
+
+    <ImageView
+        android:id="@+id/banner_app_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="850dp"
+        android:contentDescription="@string/main_activity_view_app_name"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_top_banner" />
+
+    <ImageButton
+        android:id="@+id/side_menu_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="850dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/main_side_menu_button"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/banner_app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/side_menu" />
+
+    <ImageButton
+        android:id="@+id/main_search_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="850dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/main_search_button"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/banner_app_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/search" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

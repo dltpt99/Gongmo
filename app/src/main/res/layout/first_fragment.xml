@@ -13,6 +13,5 @@
         android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:contentDescription="@string/moutain_1"
-
         app:srcCompat="@drawable/mt_bukhan" />
 </RelativeLayout>
