@@ -6,15 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".Climbactivity">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="82dp"
-        android:layout_marginLeft="82dp"
-        android:layout_marginTop="65dp"
-        android:text="등산 화면"
+    <Button
+        android:id="@+id/noob"
+        android:layout_width="400dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/beginner"
+        android:onClick="beginner"
+        app:layout_constraintBottom_toTopOf="@+id/ama"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ama"
+        android:layout_width="400dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/ama"
+        android:onClick="ama"
+        app:layout_constraintBottom_toTopOf="@+id/pro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noob" />
+
+    <Button
+        android:id="@+id/pro"
+        android:layout_width="400dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/pro"
+        android:onClick="pro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ama" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
