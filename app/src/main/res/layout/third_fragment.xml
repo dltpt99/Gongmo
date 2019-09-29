@@ -14,5 +14,5 @@
         android:scaleType="fitXY"
         android:contentDescription="@string/mountain_3"
         android:background="@drawable/banner_background2"
-        app:srcCompat="@drawable/mt_dobong" />
+        app:srcCompat="@drawable/mt_ansan" />
 </RelativeLayout>
