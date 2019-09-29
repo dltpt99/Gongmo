@@ -18,4 +18,10 @@
     <string name="mountain_2">mountain</string>
     <string name="mountain_3">mountain</string>
     <string name="indicator">indicator</string>
+    <string name="clmib_menu_easy_button">clmib menu easy button</string>
+    <string name="clmib_menu_normal_button">clmib menu normal button</string>
+    <string name="climb_menu_hard_button">climb menu hard button</string>
+    <string name="main_activity_view_app_name">main activity view app name</string>
+    <string name="main_side_menu_button">main side menu button</string>
+    <string name="main_search_button">main search button</string>
 </resources>
