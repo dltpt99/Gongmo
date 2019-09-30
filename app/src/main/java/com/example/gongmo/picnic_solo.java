@@ -1,14 +1,10 @@
 package com.example.gongmo;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
-import java.util.ArrayList;
 
 public class picnic_solo extends AppCompatActivity {
 
@@ -20,47 +16,47 @@ public class picnic_solo extends AppCompatActivity {
     }
 
     public void mt_umyun(View v){
-        Intent intent = new Intent(this, mt_umyun.class);
+        Intent intent = new Intent(this, picnic_mt_umyun.class);
         startActivity(intent);
     }
 
     public void mt_guryung(View v){
-        Intent intent = new Intent(this, mt_guryung.class);
+        Intent intent = new Intent(this, picnic_mt_guryung.class);
         startActivity(intent);
     }
 
     public void mt_ilja(View v){
-        Intent intent = new Intent(this, mt_ilja.class);
+        Intent intent = new Intent(this, picnic_mt_ilja.class);
         startActivity(intent);
     }
 
     public void mt_daemo(View v){
-        Intent intent = new Intent(this, mt_daemo.class);
+        Intent intent = new Intent(this, picnic_mt_daemo.class);
         startActivity(intent);
     }
 
     public void mt_baebong(View v){
-        Intent intent = new Intent(this, mt_baebong.class);
+        Intent intent = new Intent(this, picnic_mt_baebong.class);
         startActivity(intent);
     }
 
     public void mt_surak(View v){
-        Intent intent = new Intent(this, mt_surak.class);
+        Intent intent = new Intent(this, picnic_mt_surak.class);
         startActivity(intent);
     }
 
     public void mt_youngma(View v){
-        Intent intent = new Intent(this, mt_youngma.class);
+        Intent intent = new Intent(this, picnic_mt_youngma.class);
         startActivity(intent);
     }
 
     public void mt_dongmang(View v){
-        Intent intent = new Intent(this, mt_dongmang.class);
+        Intent intent = new Intent(this, picnic_mt_dongmang.class);
         startActivity(intent);
     }
 
     public void mt_bulam(View v){
-        Intent intent = new Intent(this, mt_bulam.class);
+        Intent intent = new Intent(this, picnic_mt_bulam.class);
         startActivity(intent);
     }
 

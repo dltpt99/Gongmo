@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class mt_youngma extends AppCompatActivity {
+public class picnic_mt_surak extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mt_youngma);
+        setContentView(R.layout.activity_picnic_mt_surak);
     }
 }

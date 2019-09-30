@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class mt_umyun extends AppCompatActivity {
+public class picnic_mt_dobong extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mt_umyun);
+        setContentView(R.layout.activity_picnic_mt_dobong);
     }
 }

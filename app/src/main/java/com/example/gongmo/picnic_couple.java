@@ -12,31 +12,31 @@ public class picnic_couple extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_picnic_couple);
+        setContentView(R.layout.activity_picnic_picnic_couple);
 
     }
 
     public void mt_namsan(View v){
-        Intent intent = new Intent(this, mt_namsan.class);
+        Intent intent = new Intent(this, picnic_mt_namsan.class);
         startActivity(intent);
     }
     public void mt_yungwang(View v){
-        Intent intent = new Intent(this, mt_yungwang.class);
+        Intent intent = new Intent(this, picnic_mt_yungwang.class);
         startActivity(intent);
     }
 
     public void mt_ujang(View v){
-        Intent intent = new Intent(this, mt_ujang.class);
+        Intent intent = new Intent(this, picnic_mt_ujang.class);
         startActivity(intent);
     }
 
     public void mt_ansan(View v){
-        Intent intent = new Intent(this, mt_ansan.class);
+        Intent intent = new Intent(this, picnic_mt_ansan.class);
         startActivity(intent);
     }
 
     public void mt_inwang(View v){
-        Intent intent = new Intent(this, mt_inwang.class);
+        Intent intent = new Intent(this, picnic_mt_inwang.class);
         startActivity(intent);
     }
 }
