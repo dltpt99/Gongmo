@@ -1,14 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.gongmo.Climb_Easy">
+    tools:context=".Climb_Easy">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view_Climb_Easy"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="vertical" />
 
-</RelativeLayout>
+    <ScrollView
+        android:layout_width="418dp"
+        android:layout_height="720dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <GridLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:columnCount="2"
+            android:rowCount="8"
+            >
+
+            <ImageButton
+                android:id="@+id/inwang_s"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="#00FFFFFF"
+                android:onClick="inwang_s"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_inwang" />
+
+            <ImageButton
+                android:id="@+id/namsan_s"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/climb_menu_hard_button"
+                android:onClick="namsan_s"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_namsan" />
+
+            <ImageButton
+                android:id="@+id/engbong"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+
+                android:background="#00FFFFFF"
+
+                android:onClick="engbong"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_engbong" />
+
+            <ImageButton
+                android:id="@+id/ansan_s"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+
+                android:background="#00FFFFFF"
+
+                android:onClick="ansan_s"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_ansan" />
+
+            <ImageButton
+                android:id="@+id/baebong_f"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+
+                android:background="#00FFFFFF"
+
+                android:onClick="baebong_f"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_baebong" />
+
+            <ImageButton
+                android:id="@+id/gaeun"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+
+                android:background="#00FFFFFF"
+
+                android:onClick="gaeun"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_gaeunsan" />
+
+            <ImageButton
+                android:id="@+id/yungwang"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+
+                android:background="#00FFFFFF"
+
+                android:onClick="yungwang"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_yungwang" />
+        </GridLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

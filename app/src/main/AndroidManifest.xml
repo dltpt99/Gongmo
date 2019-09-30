@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.gongmo">
-<supports-screens
-    android:largeScreens="true"
-    android:anyDensity="true"
-    android:normalScreens="true"
-    android:smallScreens="true"/>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
@@ -13,14 +21,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".picnic_pet"></activity>
+        <activity android:name=".Mt_umyun_s"></activity>
+        <activity android:name=".Mt_namsan_four" />
+        <activity android:name=".Mt_namsan_t" />
+        <activity android:name=".Mt_namsan_f" />
+        <activity android:name=".Mt_bulam" />
+        <activity android:name=".Mt_inwang_t" />
+        <activity android:name=".Mt_inwang_f" />
+        <activity android:name=".Mt_ansan_f" />
+        <activity android:name=".Mt_ilja" />
+        <activity android:name=".Mt_guryong" />
+        <activity android:name=".Mt_gaehwa" />
+        <activity android:name=".Mt_baebong_s" />
+        <activity android:name=".Mt_daemo" />
+        <activity android:name=".Mt_umyun_f" />
+        <activity android:name=".Mt_dobong" />
+        <activity android:name=".Mt_surack" />
+        <activity android:name=".Mt_youngma" />
+        <activity android:name=".Mt_baebong_f" />
+        <activity android:name=".Mt_yungwang" />
+        <activity android:name=".Mt_ansan_s" />
+        <activity android:name=".Mt_gaeun" />
+        <activity android:name=".Mt_namsan_s" />
+        <activity android:name=".Mt_inwang_s" />
+        <activity android:name=".Mt_engbong" />
+        <activity android:name=".picnic_pet" />
         <activity android:name=".picnic_solo" />
         <activity android:name=".picnic_couple" />
         <activity android:name=".picnic_family" />
         <activity android:name=".Climb_Easy" />
         <activity android:name=".Climb_Normal" />
         <activity android:name=".Climb_Hard" />
-        <activity android:name=".cprt"></activity>
+        <activity android:name=".cprt" />
         <activity android:name=".dev_rv" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -47,14 +79,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyC0pmHj4gwWN6FnkNoHEMbSVgCVz1EiSns" />
     </application>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.DIAL_PHONE" />
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
