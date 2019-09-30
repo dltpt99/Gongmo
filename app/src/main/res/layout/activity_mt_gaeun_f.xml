@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mt_gaeun_f">
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="70dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mt_gaeunsan" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="위치 : 서울특별시 성북구 종암동"
+        android:textSize="10pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="개운산 숲 나들길"
+        android:textSize="13pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="대도시에서 “녹색허파”로서의 역할과 수도권 주민들의 자연휴식처로 크게 애용되고 있다. 개운산은 성북구 안암동에 있는 산으로서 안암산, 진석산(陳石山)이라고도 한다. 노선 주변에는 태조 5년(1396) 왕사 무학이 창건한 개운사가 있어 산의 이름이 되었다. 산 중턱 이상까지 도로가 놓여져 접근하기 쉬우며 산을 한 바퀴 빙 둘러볼 수도 있고, 이 코스처럼 중턱 숲길을 따라 걷다 고려대 캠퍼스의 고풍스러운 건물을 감상하는 길로 연결해 볼 수도 있다. 개운산은 정상과 중턱 오솔길 모두 성북구에서 공을 들여 가꾼 흔적이 역력하다. 또 정상 조망대에서는 그리 높지 않은 곳임에도 시원한 도심 전망을 만끽할 수 있다.
+
+\n\n  교통편;
+\n진입로 1 : 길음역 지하철 4호선 2번 출구
+\n진입로 2 : 통일교회 버스 정류장 마을 성북15, 21
+\n진입로 3 : 도보진입
+\n진입로 4 : 고려대아이스링크 버스 정류장 마을 성북20
+\n진입로 5 : 도보진입진입로 6 : 고려대역 지하철 6호선 1번 출구"
+                android:textSize="9pt"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mt_inwang_f">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="70dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mt_inwang" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="위치 : 서울 종로구와 서대문구 홍제동 경계"
+        android:textSize="10pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="인왕산 돈의문 터 - 창의문"
+        android:textSize="13pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="돈의문 터에서 시작해 인왕산을 넘어 윤동주 시인의 언덕까지 이어지는 구간이다. 해발 338m인 인왕산은 풍수상 우백호(右白虎)에 해당한다. 거대한 바위들이 노출되어 있는 바위산으로 치마바위, 선바위, 기차바위 등 기암괴석이 많다. 인왕(仁王)은 불교식 명칭으로, 무학대사가 이 산을 주산으로 삼으면 불교가 융성할 것이라고 하였다는 이야기가 전한다. 1968년 1·21 사태 이후 민간인 출입이 통제되다가 1993년 개방되었다.
+※인왕산은 바위 구간이 많아서 겨울철 등산 시에 주의해야 한다. (인왕산으로 진입하면 화장실이 없으므로 출발 전 미리 다녀오는 것이 좋다.
+※매주 월요일 휴무, 월요일이 공휴일인 경우 화요일 휴무"
+                android:textSize="9pt"
+                tools:layout_editor_absoluteX="39dp"
+                tools:layout_editor_absoluteY="431dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

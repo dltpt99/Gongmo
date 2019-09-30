@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mt_daemo_f">
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="70dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mt_daemo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="위치 : 서울특별시 강남구"
+        android:textSize="10pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="대모산 나들길"
+        android:textSize="13pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="코스 대부분이 숲길이며, 대모산은 해발 293m의 야트막한 산으로 서쪽의 구룡산과 능선을 나란히 하고 있어 연결하여 많은 사람들이 걷는다. 예전에는 국수봉이라고 불렸던 산으로 인근에 아파트단지들이 많이 들어서 주민들의 휴식공간으로 이용되고 있다. 아침 운동이나 가벼운 산책을 즐기려는 주민들이 많이 찾는다. 동쪽 끝은 수서역 4번 출구와 맞닿아 있다.
+
+\n\n  교통편
+\n진입로 1 : 도보접근(서울로봇고등학교 앞)
+\n-일원역 지하철 3호선 5번 출구에서 도보로 이동(약 500m) 서울로봇고등학교로 갈 수 있다
+\n진입로 2 : 세곡2보금자리
+\n※교통편의 변경이 있을 수 있으니 출발전 확인 바랍니다.
+
+\n\n  세부코스
+\n실로암 약수터~대모산 초소위~독도모형~대모산 정상"
+                android:textSize="9pt"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,4 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".cprt">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[아이콘 저작권]
+\nIcon made by Smashicons from https://smashicons.com -피크닉아이콘
+\nIcon made by surang from www.flaticon.com -gps아이콘
+\nIcon made by Smashicons from https://smashicons.com -등산아이콘
+\nIcon made by xnimrodx from www.flaticon.com -식당아이콘
+\nIcon made by smalllikeart from www.flaticon.com  -중급자아이콘
+\nIcon made by Freepik from www.flaticon.com -초급자아이콘
+\nIcon made by Good Ware from www.flaticon.com-고급자아이콘
+\nIcon made by Freepik from www.flaticon.com-sos 아이콘
+\nIcon made by Freepik from www.flaticon.com-가족 아이콘
+\nIcon made by Freepik from www.flaticon.com- 연인 아이콘
+\nIcon made by Freepik from www.flaticon.com- 혼산 아이콘
+\nIcon made by Zlatko Najdenovski from www.flaticon.com-sos아이콘
+
+\n[코스 난이도 출처]
+\nhttp://gil.seoul.go.kr/walk/main.jsp
+
+\n[메인화면 출처]
+\nPicture made by Freepik from www.flaticon.com- 산 일러스트
+
+\n[폰트 사용 출처]
+\n앱: Pont made by 독도종합연구소 호사카 유지 교수 from http://www.goyang.go.kr/www/www05/www05_3/www05_3_6/www05_3_6_tab1.jsp
+\n메인화면: Pont made by  from https://login.font.co.kr/yoonfont/free/free_dokdo.asp
+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
 </androidx.constraintlayout.widget.ConstraintLayout>

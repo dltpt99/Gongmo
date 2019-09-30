@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mt_baebong_s">
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="70dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mt_baebong" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="위치 : 서울특별시 동대문구"
+        android:textSize="10pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="배봉산 답십리 나들길"
+        android:textSize="13pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="동대문구에서 조성한 녹지순환산책로를 접근이 용이하도록 재구성한 코스이다. 따라서 배봉산근린공원이 그 중심을 이룬다. 배봉산근린공원은 산이 부족한 동대문구의 보조 산소통이다. 배봉산은 동대문구 전농동에 있는 표고 110m의 산이다. 배봉산이라는 이름은 조선조 영조때 사도세자가 당쟁에 의해 죽은 뒤 이곳에 장례를 지냈는데, 사도세자의 아들인 정조가 평생에 못다한 불효를 속죄한다며 날마다 부친의 묘소를 향해 배례를 하면서 산이름이 배봉산(拜峰山)으로 불려졌다. 서울시립대학교가 위치해 있으며, 조선시대 영우원과 휘경원 등 왕실 묘원이 마련되어 있었으며, 목마장의 울타리가 지났던 곳이다.
+\n※배봉산은 작은 동산이라 누구나 쉽게 오를 수 있고 능선도 완만하게 이어져 시민들에게 사랑받는 산책로이다. 높은 산처럼 조망이 좋지는 않지만 우거진 나무들 덕에 가을에는 낙엽을 밟으며 가을을 몸으로 느낄 수 있다.
+
+\n\n  교통편
+\n진입로 1 : 시립대입구 버스 정류장 마을 동대문05
+\n진입로 2 : 답십리2동한양아파트앞 버스 정류장(06-228) 간선 262, 지선 2112, 3220
+\n진입로 3 : 배봉초등학교앞 버스 정류장(06-210) 지선 2015, 2233, 2311, 2230
+\n진입로 4 : 도보진입
+\n- 지하철 1호선, 중앙선 회기역 2번 출구에서 삼육병원으로 이동 배봉산근린공원입구로 진입(약 800m)
+\n※교통편의 변경이 있을 수 있으니 출발전 확인 바랍니다.
+
+\n\n  세부코스
+\n배봉산 출입구~답십리 근린공원~배봉산근린공원 진입"
+                android:textSize="9pt"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

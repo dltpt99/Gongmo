@@ -2,6 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.gongmo">
 
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
@@ -32,6 +44,30 @@
         <activity android:name=".picnic_mt_bukan" />
         <activity android:name=".picnic_mt_umyun" />
         <activity android:name=".mt_info" />
+        <activity android:name=".Mt_umyun_s"></activity>
+        <activity android:name=".Mt_namsan_four" />
+        <activity android:name=".Mt_namsan_t" />
+        <activity android:name=".Mt_namsan_f" />
+        <activity android:name=".Mt_bulam_f" />
+        <activity android:name=".Mt_inwang_t" />
+        <activity android:name=".Mt_inwang_f" />
+        <activity android:name=".Mt_ansan_f" />
+        <activity android:name=".Mt_ilja_f" />
+        <activity android:name=".Mt_guryong_f" />
+        <activity android:name=".Mt_gaehwa_f" />
+        <activity android:name=".Mt_baebong_s" />
+        <activity android:name=".Mt_daemo_f" />
+        <activity android:name=".Mt_umyun_f" />
+        <activity android:name=".Mt_dobong_f" />
+        <activity android:name=".Mt_surack_f" />
+        <activity android:name=".Mt_youngma_f" />
+        <activity android:name=".Mt_baebong_f" />
+        <activity android:name=".Mt_yungwang_f" />
+        <activity android:name=".Mt_ansan_s" />
+        <activity android:name=".Mt_gaeun_f" />
+        <activity android:name=".Mt_namsan_s" />
+        <activity android:name=".Mt_inwang_s" />
+        <activity android:name=".Mt_engbong_f" />
         <activity android:name=".picnic_pet" />
         <activity android:name=".picnic_solo" />
         <activity android:name=".picnic_couple" />
@@ -71,14 +107,6 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyC0pmHj4gwWN6FnkNoHEMbSVgCVz1EiSns" />
     </application>
-
-    <supports-screens
-        android:anyDensity="true"
-        android:largeScreens="true"
-        android:normalScreens="true"
-        android:smallScreens="true" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 

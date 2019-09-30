@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mt_namsan_f">
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="70dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mt_namsan" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="위치 : 서울 중구 회현동1가"
+        android:textSize="10pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="남산 장충체육관-백범광장"
+        android:textSize="13pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="장충체육관 뒷길에서 남산공원까지 이어지는 구간이다. 남산(목멱산, 해발 243m)은 서울의 안산(案山)에 해당하여 조선 초기부터 국태민안(國泰民安)을 비는 국사당을 이 산에 두었다. 또 정상에는 변방의 변란을 알리는 봉수대를 설치하여 궁궐에서 직접 살필 수 있게 하였다. 한강 남북을 포괄하는 현재 남산은 서울의 행정구역상 중심부에 해당하며 정상 부근에는 서울의 지리적 중심임을 표시하는 ‘서울 중심점’이 설치되어 있다. 1921년부터 1925년까지 일제가 남산 중턱에 조선신궁을 지으면서 주변 성벽을 대부분 파괴했으나 1970년대 이후의 성곽 보존 · 정비 사업과 1990년대 중반 남산 제 모습 찾기 사업을 통해 현재는 옛 모습을 상당 부분 회복하였다.
+\n※남산-24시간 개방 (신라호텔~반얀트리클럽, 스파서울 안쪽 구간 09:00~18:00)
+\n※장충체육관 뒷길은 주택 지역이므로 주민들에게 피해가 가지 않도록 배려가 필요하다."
+                android:textSize="9pt"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,14 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.gongmo.Climb_Hard">
+    tools:context=".Climb_Hard">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view_Climb_Hard"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="vertical" />
 
-</RelativeLayout>
+    <ScrollView
+        android:layout_width="418dp"
+        android:layout_height="720dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <GridLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:columnCount="2"
+            android:rowCount="8">
+
+            <ImageButton
+                android:id="@+id/dobong_bt"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="#00FFFFFF"
+                android:onClick="dobong"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_dobong1" />
+
+            <ImageButton
+                android:id="@+id/surack"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/climb_menu_hard_button"
+                android:onClick="surack"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_surak" />
+
+            <ImageButton
+                android:id="@+id/youngma"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+
+                android:background="#00FFFFFF"
+
+                android:onClick="youngma"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_youngma" />
+
+
+        </GridLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
