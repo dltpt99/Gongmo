@@ -18,7 +18,7 @@ public class Climb_Easy extends AppCompatActivity {
     }
 
     public void engbong(View v) {
-        Intent intent = new Intent(this, Mt_engbong.class);
+        Intent intent = new Intent(this, Mt_engbong_f.class);
         startActivity(intent);
     }
     public void ansan_s(View v) {
@@ -30,7 +30,7 @@ public class Climb_Easy extends AppCompatActivity {
         startActivity(intent);
     }
     public void gaeun(View v) {
-        Intent intent = new Intent(this, Mt_gaeun.class);
+        Intent intent = new Intent(this, Mt_gaeun_f.class);
         startActivity(intent);
     }
     public void inwang_s(View v) {
@@ -42,7 +42,7 @@ public class Climb_Easy extends AppCompatActivity {
         startActivity(intent);
     }
     public void yungwang(View v) {
-        Intent intent = new Intent(this, Mt_yungwang.class);
+        Intent intent = new Intent(this, Mt_yungwang_f.class);
         startActivity(intent);
     }
 }

@@ -1,14 +1,10 @@
 package com.example.gongmo;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
-import java.util.ArrayList;
 
 public class Climb_Hard extends AppCompatActivity {
 
@@ -21,15 +17,15 @@ public class Climb_Hard extends AppCompatActivity {
 
     }
     public void dobong(View v) {
-        Intent intent = new Intent(this, Mt_dobong.class);
+        Intent intent = new Intent(this, Mt_dobong_f.class);
         startActivity(intent);
     }
     public void surack(View v) {
-        Intent intent = new Intent(this, Mt_surack.class);
+        Intent intent = new Intent(this, Mt_surack_f.class);
         startActivity(intent);
     }
     public void youngma(View v) {
-        Intent intent = new Intent(this, Mt_youngma.class);
+        Intent intent = new Intent(this, Mt_youngma_f.class);
         startActivity(intent);
     }
 
