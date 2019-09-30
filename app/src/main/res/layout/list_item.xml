@@ -20,6 +20,9 @@
 
             android:background="#00FFFFFF"
             android:backgroundTint="#28251919"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="mt_moreinfo_button"
             android:scaleType="center"
             android:tint="#2AFFFFFF" />
 

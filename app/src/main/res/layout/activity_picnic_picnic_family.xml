@@ -45,11 +45,41 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="145dp"
         android:layout_marginTop="300dp"
-        android:onClick="mt_bulam"
+        android:onClick="mt_bong"
         android:tint="#26FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mt_bulam" />
+        app:srcCompat="@drawable/mt_bong" />
+
+    <ImageButton
+        android:id="@+id/imageButton20"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="445dp"
+        android:onClick="mt_dobong"
+        android:tint="#26FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mt_dobong1" />
+
+    <ImageButton
+        android:id="@+id/imageButton17"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="445dp"
+        android:onClick="mt_inwang"
+        android:tint="#26FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mt_inwang" />
 
     <ImageButton
         android:id="@+id/imageButton15"
@@ -60,11 +90,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="280dp"
         android:layout_marginTop="155dp"
-        android:onClick="mt_youngma"
+        android:onClick="mt_yungwang"
         android:tint="#26FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mt_youngma" />
+        app:srcCompat="@drawable/mt_yungwang" />
 
     <ImageButton
         android:id="@+id/imageButton16"
@@ -75,11 +105,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="280dp"
         android:layout_marginTop="300dp"
-        android:onClick="mt_surak"
+        android:onClick="mt_goeun"
         android:tint="#26FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mt_surak" />
+        app:srcCompat="@drawable/mt_goeun" />
 
     <ImageButton
         android:id="@+id/imageButton4"
@@ -105,11 +135,41 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="8dp"
         android:layout_marginTop="300dp"
+        android:onClick="mt_ilja"
+        android:tint="#26FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mt_ilja" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="445dp"
         android:onClick="mt_dongmang"
         android:tint="#26FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/mt_dongmangbong" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="590dp"
+        android:onClick="mt_surak"
+        android:tint="#26FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mt_surak" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -120,11 +180,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="145dp"
         android:layout_marginTop="10dp"
-        android:onClick="mt_guryung"
+        android:onClick="mt_bukan"
         android:tint="#26FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mt_guryung" />
+        app:srcCompat="@drawable/mt_bukan" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -135,11 +195,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="280dp"
         android:layout_marginTop="10dp"
-        android:onClick="mt_ilja"
+        android:onClick="mt_ujang"
         android:tint="#26FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mt_ilja" />
+        app:srcCompat="@drawable/mt_ujang1" />
 
     <TextView
         android:id="@+id/textView2"
@@ -165,7 +225,7 @@
         android:background="#31FFFFFF"
         android:fontFamily="@font/goyang"
         android:gravity="center_horizontal"
-        android:text="구룡산"
+        android:text="북안산"
         android:textColor="#FFFF99"
         android:textSize="36sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -180,7 +240,7 @@
         android:background="#31FFFFFF"
         android:fontFamily="@font/goyang"
         android:gravity="center_horizontal"
-        android:text="일자산"
+        android:text="우장산"
         android:textColor="#FFFF99"
         android:textSize="36sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -210,7 +270,7 @@
         android:background="#31FFFFFF"
         android:fontFamily="@font/goyang"
         android:gravity="center_horizontal"
-        android:text="용마산"
+        android:text="용왕산"
         android:textColor="#FFFF99"
         android:textSize="36sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -240,7 +300,7 @@
         android:background="#31FFFFFF"
         android:fontFamily="@font/goyang"
         android:gravity="center_horizontal"
-        android:text="동망봉"
+        android:text="일자산"
         android:textColor="#FFFF99"
         android:textSize="36sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -255,7 +315,7 @@
         android:background="#31FFFFFF"
         android:fontFamily="@font/goyang"
         android:gravity="center_horizontal"
-        android:text="수락산"
+        android:text="고은산"
         android:textColor="#FFFF99"
         android:textSize="36sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -270,10 +330,69 @@
         android:background="#31FFFFFF"
         android:fontFamily="@font/goyang"
         android:gravity="center_horizontal"
-        android:text="불암산"
+        android:text="봉산"
         android:textColor="#FFFF99"
         android:textSize="36sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="97dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="480dp"
+        android:background="#31FFFFFF"
+        android:fontFamily="@font/goyang"
+        android:gravity="center_horizontal"
+        android:text="도봉산"
+        android:textColor="#FFFF99"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="97dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="295dp"
+        android:layout_marginTop="480dp"
+        android:background="#31FFFFFF"
+        android:fontFamily="@font/goyang"
+        android:gravity="center_horizontal"
+        android:text="인왕산"
+        android:textColor="#FFFF99"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="97dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="480dp"
+        android:background="#31FFFFFF"
+        android:fontFamily="@font/goyang"
+        android:gravity="center_horizontal"
+        android:text="동망산"
+        android:textColor="#FFFF99"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="97dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="630dp"
+        android:background="#31FFFFFF"
+        android:fontFamily="@font/goyang"
+        android:gravity="center_horizontal"
+        android:text="수락산"
+        android:textColor="#FFFF99"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

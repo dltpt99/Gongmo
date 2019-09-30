@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/banner_background2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/mt_daemo_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/banner_background2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ImageView
+                android:id="@+id/mtinfo_photo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="58dp"
+                android:background="@drawable/banner_background2"
+                android:backgroundTint="#28251919"
+                android:scaleType="center"
+                android:tint="#2AFFFFFF"
+                app:srcCompat="@drawable/mt_ansan" />
+
+            <TextView
+                android:id="@+id/mtinfo_name"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="39dp"
+                android:layout_marginEnd="43dp"
+                android:background="#4FFFFFFF"
+                android:fontFamily="@font/goyang"
+                android:gravity="center"
+                android:text="안산"
+                android:textColor="#131312"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mtinfo_place"
+                android:layout_width="219dp"
+                android:layout_height="72dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="114dp"
+                android:layout_marginEnd="28dp"
+                android:fontFamily="@font/goyang"
+                android:gravity="center_horizontal"
+                android:text="@string/mt_ansan_place"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/mtinfo_desc"
+                android:layout_width="365dp"
+                android:layout_height="380dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="203dp"
+                android:fontFamily="@font/goyang"
+                android:gravity="center_horizontal"
+                android:text="@string/mt_ansan"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
