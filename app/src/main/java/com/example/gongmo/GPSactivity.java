@@ -113,7 +113,7 @@ public class GPSactivity extends AppCompatActivity
 
     }
     public void SOS(View v) {
-        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:112"));
+        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:119"));
         startActivity(intent);
     }
     @Override
