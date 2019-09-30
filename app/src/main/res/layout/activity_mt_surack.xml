@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mt_surack">
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="70dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mt_surak" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="위치 : 서울 노원구 상계동"
+        android:textSize="10pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="수락산"
+        android:textSize="13pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="수락산은 해발 637m로 남쪽으로 불암산과 연결되어 노원구 상계동과 의정부시, 남양주시의 경계를 이루고 있다. 수락산 능선상에 있는 암봉들은 서울을 향해서 고개를 숙이고 있는 형국으로 태조 이성계는 서울의 수호산이라고 하였다. 수락산의 명칭은 내원암 일대 계곡에 바위가 벽을 이루고 있어 물이 굴러 떨어지므로 수락이라고 하였다는 설과 골짜기 물이 맑아 금류, 은류, 옥류라는 폭포를 이루어 떨어지는 자태에 이름이 붙여졌다는 전설도 있다. 대부분 돌산으로 화강암의 암벽이 노출되어 있지만 산세는 험하지 않으며 수각계곡과 노원골 일대 1km 산책로는 삼림욕을 하기에 아주 놓은 곳이다. 주말이면 도심에서 몰려온 산악인들로 항상 붐비는 산이며 북한산, 도봉산, 관악산과 함께 서울 근교의 4대 명산으로 불린다."
+                android:textSize="9pt"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

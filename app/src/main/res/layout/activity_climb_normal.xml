@@ -1,14 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.gongmo.Climb_Normal">
+    tools:context=".Climb_Normal">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view_Climb_Normal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="vertical" />
 
-</RelativeLayout>
+    <ScrollView
+        android:layout_width="418dp"
+        android:layout_height="720dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <GridLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="8">
+
+            <ImageButton
+                android:id="@+id/umyun_f"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="#00FFFFFF"
+                android:onClick="umyun_f"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_umyun" />
+
+            <ImageButton
+                android:id="@+id/umyun_s"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/climb_menu_hard_button"
+                android:onClick="umyun_s"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_umyun" />
+
+            <ImageButton
+                android:id="@+id/daemo"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+
+                android:background="#00FFFFFF"
+
+                android:onClick="daemo"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_daemo" />
+
+            <ImageButton
+                android:id="@+id/baebong_s"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+
+                android:background="#00FFFFFF"
+
+                android:onClick="baebong_s"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_baebong" />
+            <ImageButton
+                android:id="@+id/gaehwa"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+
+                android:background="#00FFFFFF"
+
+                android:onClick="gaehwa"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_gaewha" />
+            <ImageButton
+                android:id="@+id/guryong"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+
+                android:background="#00FFFFFF"
+
+                android:onClick="guryong"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_guryung" />
+            <ImageButton
+                android:id="@+id/ilja"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+
+                android:background="#00FFFFFF"
+
+                android:onClick="ilja"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_ilja" />
+            <ImageButton
+                android:id="@+id/ansan_f"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+
+                android:background="#00FFFFFF"
+
+                android:onClick="ansan_f"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_ansan" />
+            <ImageButton
+                android:id="@+id/inwang_f"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+
+                android:background="#00FFFFFF"
+
+                android:onClick="inwang_f"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_inwang" />
+            <ImageButton
+                android:id="@+id/inwang_t"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+
+                android:background="#00FFFFFF"
+
+                android:onClick="inwang_t"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_inwang" />
+            <ImageButton
+                android:id="@+id/bulam"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+
+                android:background="#00FFFFFF"
+
+                android:onClick="bulam"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_bulam" />
+            <ImageButton
+                android:id="@+id/namsan_f"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+
+                android:background="#00FFFFFF"
+
+                android:onClick="namsan_f"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_namsan" />
+            <ImageButton
+                android:id="@+id/namsan_t"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+
+                android:background="#00FFFFFF"
+
+                android:onClick="namsan_t"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_namsan" />
+            <ImageButton
+                android:id="@+id/namsan_four"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+
+                android:background="#00FFFFFF"
+
+                android:onClick="namsan_four"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mt_namsan" />
+
+        </GridLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,4 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".dev_rv">
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="개발자 후기
+\n-산 선정이유\n
+뒷산같은 너무 방대한 범위로 잡지 않고 그 구를 대표하는 산으로 범위를 잡아 직접 산을 등산해보고 산을 선정하였다.
+\n-난이도 조절\n
+사람들의 후기+개발자의 후기 와 서울특별시에서 제공하는 서울둘레길 코스 난이도를 참고하고  난이도를 선정하였다.
+\n-나들이 분류\n
+사람들이 각각의 산을 가는 주된 목적이 무엇인지 세부적으로 조사하여 분류하였다.
+\n-앱을 만들고 난 후기\n
+이 앱을 통해 서울시 산에 대해 홍보효과를 기대한다.
+서울지역외 사람들 뿐만아니라 서울지역에 거주하는 사람들도 남산을 자신있게 외치지만 그이후로는 답변이 없다.
+실제로 저희 팀원들에게 물어봤지만 남산을 말하고 나서 더이상 말하지 못했다.
+하지만 이앱을 완성하면서 서울시의 산에 대해 지식을 쌓게 되었고 이로인해 이앱을 사용하는 사람들에게도 남산뿐만 아니라
+여러산을 외칠수 있게 되었음 한다."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
