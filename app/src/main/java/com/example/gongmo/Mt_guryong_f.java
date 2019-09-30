@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Mt_guryong extends AppCompatActivity {
+public class Mt_guryong_f extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mt_guryong);
+        setContentView(R.layout.activity_mt_guryong_f);
     }
 }

@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Mt_gaeun extends AppCompatActivity {
+public class Mt_gaeun_f extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mt_gaeun);
+        setContentView(R.layout.activity_mt_gaeun_f);
     }
 }

@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Mt_daemo extends AppCompatActivity {
+public class Mt_dobong_f extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mt_daemo);
+        setContentView(R.layout.activity_mt_dobong_f);
     }
 }

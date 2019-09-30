@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Mt_engbong">
+    tools:context=".Mt_ilja_f">
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
@@ -13,14 +13,14 @@
         android:scaleType="fitXY"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mt_engbong" />
+        app:srcCompat="@drawable/mt_ilja" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="위치 : 서울시 성동구 응봉동"
+        android:text="위치 : 서울특별시 강동구"
         android:textSize="10pt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="응봉산"
+        android:text="일자산 숲 나들길"
         android:textSize="13pt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +52,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="응봉역에서 내려 15분여 걸어가면 산이라고 하기 민망 할정도로 나지막한 얕은 산이고 계단이 무척 잘 만들어져 있어 누구나 쉽게 올라갈수 있는 뒷동산 정도의 난이도이다. 주변의 풍광이 매우 아름다운 곳으로 유명하다. 특히 봄에는 노란 개나리 꽃들이 산 하나 가득 메워져 있는 아름다운 모습이 있어 개나리축제가 열린다. 정상에 도착하면 멋진 한강뷰를 산에서 만끽할 수 있다. "
+                android:text="노선의 대부분은 차지하는 일자산은 이름 그대로 능선이 군더더기 없이 일(一)자로 뻗은 산이다. 때문에 중간 중간 갈림길이 많아도 큰 길을 따라 곧장 질러가면 3㎞에 달하는 울창한 숲길을 고스란히 두 발에 담아낼 수 있다. 특히 아름드리나무들이 많아 마치 큰 산에 들어선 듯한 청량감이 일품이다. 강동구가 야심차게 추진하고 있는 강동그린웨이를 중심으로 둔촌동 생태경관보전지역, 허브천문공원 및 길동생태공원 등 강동의 주요 명소를 연결한 코스이다. 야트막한 능선으로 뻗은 일자산 숲길을 따라 자연의 향기를 만끽할 수 있으며, 길동생태공원(사전예약 필수)은 우리나라의 대표적인 생태공원으로 계절별로 다양한 체험 프로그램이 마련되어 있다.
+\n※봄이면 꽃향기가 가득한 허브천문공원, 그리고 동·식물의 모습을 관찰 할 수 있는 길동생태공원 등을 돌아보는 볼거리 등 아이들과 무리 없이 즐길 수 있는 요소들을 많이 포함한 가족 맞춤형 코스이다.
+\n\n  교통편:
+\n진입로 1 : 일자산입구 버스 정류장(25-185) 간선버스 351
+\n- 지하철 5호선 강동역 4번 출구 강동역(동신중학교) 버스 정류장(25-126)에서 간선버스 351번 탑승 가능"
                 android:textSize="9pt"
                 />
         </LinearLayout>
