@@ -1,40 +1,43 @@
 package com.example.gongmo;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import java.util.ArrayList;
+import android.view.View;
 
 public class picnic_couple extends AppCompatActivity {
 
-    RecyclerView mRecyclerView;
-    RecyclerView.LayoutManager mLayoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_picnic_couple);
 
-        mRecyclerView = findViewById(R.id.recycler_view_couple);
-        mRecyclerView.setHasFixedSize(true);
-        mLayoutManager = new GridLayoutManager(this,3);
-        mRecyclerView.setLayoutManager(mLayoutManager);
+    }
 
-        ArrayList<mtinfo> mtinfoArrayList = new ArrayList<>();
+    public void mt_namsan(View v){
+        Intent intent = new Intent(this, mt_namsan.class);
+        startActivity(intent);
+    }
+    public void mt_yungwang(View v){
+        Intent intent = new Intent(this, mt_yungwang.class);
+        startActivity(intent);
+    }
 
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_namsan, "남산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_ujang, "우장산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_yungwang, "용왕산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_ansan, "안산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_inwang, "인왕산"));
+    public void mt_ujang(View v){
+        Intent intent = new Intent(this, mt_ujang.class);
+        startActivity(intent);
+    }
 
-        MyAdapter myAdapter = new MyAdapter(mtinfoArrayList);
+    public void mt_ansan(View v){
+        Intent intent = new Intent(this, mt_ansan.class);
+        startActivity(intent);
+    }
 
-        mRecyclerView.setAdapter(myAdapter);
-
+    public void mt_inwang(View v){
+        Intent intent = new Intent(this, mt_inwang.class);
+        startActivity(intent);
     }
 }
 

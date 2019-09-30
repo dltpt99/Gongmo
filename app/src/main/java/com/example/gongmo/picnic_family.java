@@ -1,46 +1,76 @@
 package com.example.gongmo;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import java.util.ArrayList;
+import android.view.View;
 
 public class picnic_family extends AppCompatActivity {
 
-    RecyclerView mRecyclerView;
-    RecyclerView.LayoutManager mLayoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_picnic_family);
 
-        mRecyclerView = findViewById(R.id.recycler_view_family);
-        mRecyclerView.setHasFixedSize(true);
-        mLayoutManager = new GridLayoutManager(this,3);
-        mRecyclerView.setLayoutManager(mLayoutManager);
-
-        ArrayList<mtinfo> mtinfoArrayList = new ArrayList<>();
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_umyun, "우면산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_bukan, "북안산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_ujang, "우장산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_daemo, "대모산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_baebong, "배봉산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_yungwang, "용왕산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_ilja, "일자산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_bong, "봉산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_goeun, "고은산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_dongmangbong, "동망산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_dobong1, "도봉산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_inwang, "인왕산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_surak, "수락산"));
-        MyAdapter myAdapter = new MyAdapter(mtinfoArrayList);
-
-        mRecyclerView.setAdapter(myAdapter);
 
     }
+
+    public void mt_umyun(View v){
+        Intent intent = new Intent(this, mt_umyun.class);
+        startActivity(intent);
+    }
+
+    public void mt_bukan(View v){
+        Intent intent = new Intent(this, mt_bukan.class);
+        startActivity(intent);
+    }
+    public void mt_ujang(View v){
+        Intent intent = new Intent(this, mt_ujang.class);
+        startActivity(intent);
+    }
+    public void mt_daemo(View v){
+        Intent intent = new Intent(this, mt_daemo.class);
+        startActivity(intent);
+    }
+    public void mt_baebong(View v){
+        Intent intent = new Intent(this, mt_baebong.class);
+        startActivity(intent);
+    }
+    public void mt_yungwang(View v){
+        Intent intent = new Intent(this, mt_yungwang.class);
+        startActivity(intent);
+    }
+    public void mt_ilja(View v){
+        Intent intent = new Intent(this, mt_ilja.class);
+        startActivity(intent);
+    }
+    public void mt_bong(View v){
+        Intent intent = new Intent(this, mt_bong.class);
+        startActivity(intent);
+    }
+    public void mt_goeun(View v){
+        Intent intent = new Intent(this, mt_goeun.class);
+        startActivity(intent);
+    }
+    public void mt_dongmang(View v){
+        Intent intent = new Intent(this, mt_dongmang.class);
+        startActivity(intent);
+    }
+    public void mt_dobong(View v){
+        Intent intent = new Intent(this, mt_dobong.class);
+        startActivity(intent);
+    }
+    public void mt_inwang(View v){
+        Intent intent = new Intent(this, mt_inwang.class);
+        startActivity(intent);
+    }
+    public void mt_surak(View v){
+        Intent intent = new Intent(this, mt_surak.class);
+        startActivity(intent);
+    }
+
+
 }
 

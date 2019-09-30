@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.gongmo">
-<supports-screens
-    android:largeScreens="true"
-    android:anyDensity="true"
-    android:normalScreens="true"
-    android:smallScreens="true"/>
+
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
@@ -13,14 +9,37 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".picnic_pet"></activity>
+        <activity android:name=".mt_gaeun"></activity>
+        <activity android:name=".mt_gaewha" />
+        <activity android:name=".mt_engbong" />
+        <activity android:name=".mt_bukhan" />
+        <activity android:name=".mt_bulam" />
+        <activity android:name=".mt_youngma" />
+        <activity android:name=".mt_guryung" />
+        <activity android:name=".mt_ansan" />
+        <activity android:name=".mt_namsan" />
+        <activity android:name=".mt_surak" />
+        <activity android:name=".mt_inwang" />
+        <activity android:name=".mt_dobong" />
+        <activity android:name=".mt_dongmang" />
+        <activity android:name=".mt_goeun" />
+        <activity android:name=".mt_bong" />
+        <activity android:name=".mt_ilja" />
+        <activity android:name=".mt_yungwang" />
+        <activity android:name=".mt_baebong" />
+        <activity android:name=".mt_daemo" />
+        <activity android:name=".mt_ujang" />
+        <activity android:name=".mt_bukan" />
+        <activity android:name=".mt_umyun" />
+        <activity android:name=".mt_info" />
+        <activity android:name=".picnic_pet" />
         <activity android:name=".picnic_solo" />
         <activity android:name=".picnic_couple" />
         <activity android:name=".picnic_family" />
         <activity android:name=".Climb_Easy" />
         <activity android:name=".Climb_Normal" />
         <activity android:name=".Climb_Hard" />
-        <activity android:name=".cprt"></activity>
+        <activity android:name=".cprt" />
         <activity android:name=".dev_rv" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -47,13 +66,20 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyC0pmHj4gwWN6FnkNoHEMbSVgCVz1EiSns" />
     </application>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
 </manifest>

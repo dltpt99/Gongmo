@@ -4,43 +4,73 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import java.util.ArrayList;
 
 public class picnic_pet extends AppCompatActivity {
-
-    RecyclerView mRecyclerView;
-    RecyclerView.LayoutManager mLayoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_picnic_pet);
 
-        mRecyclerView = findViewById(R.id.recycler_view_pet);
-        mRecyclerView.setHasFixedSize(true);
-        mLayoutManager = new GridLayoutManager(this,3);
-        mRecyclerView.setLayoutManager(mLayoutManager);
+    }
 
-        ArrayList<mtinfo> mtinfoArrayList = new ArrayList<>();
+    public void mt_bukhan(View v){
+        Intent intent = new Intent(this, mt_bukhan.class);
+        startActivity(intent);
+    }
 
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_bukan, "북악산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_youngma, "용마산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_bulam, "불암산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_ujang, "우장산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_engbong, "응봉산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_dongmangbong, "동망봉"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_yungwang, "용왕산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_gaewha, "개화산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_ilja, "일자산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_bong, "봉산"));
-        mtinfoArrayList.add(new mtinfo(R.drawable.mt_gaeunsan, "개운산"));
+    public void mt_youngma(View v){
+        Intent intent = new Intent(this, mt_youngma.class);
+        startActivity(intent);
+    }
 
-        MyAdapter myAdapter = new MyAdapter(mtinfoArrayList);
+    public void mt_bulam(View v){
+        Intent intent = new Intent(this, mt_bulam.class);
+        startActivity(intent);
+    }
+    public void mt_gaeun(View v){
+        Intent intent = new Intent(this, mt_gaeun.class);
+        startActivity(intent);
+    }
 
-        mRecyclerView.setAdapter(myAdapter);
+    public void mt_ujang(View v){
+        Intent intent = new Intent(this, mt_ujang.class);
+        startActivity(intent);
+    }
 
+    public void mt_bong(View v){
+        Intent intent = new Intent(this, mt_bong.class);
+        startActivity(intent);
+    }
+
+    public void mt_engbong(View v){
+        Intent intent = new Intent(this, mt_engbong.class);
+        startActivity(intent);
+    }
+
+    public void mt_dongmang(View v){
+        Intent intent = new Intent(this, mt_dongmang.class);
+        startActivity(intent);
+    }
+
+    public void mt_gaewha(View v){
+        Intent intent = new Intent(this, mt_gaewha.class);
+        startActivity(intent);
+    }
+
+    public void mt_yungwang(View v){
+        Intent intent = new Intent(this, mt_yungwang.class);
+        startActivity(intent);
+    }
+
+    public void mt_ilja(View v){
+        Intent intent = new Intent(this, mt_ilja.class);
+        startActivity(intent);
     }
 }
 
